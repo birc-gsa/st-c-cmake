@@ -17,7 +17,7 @@ Now you have a connection to the base-repo so you can fetch and merge updates in
 > git merge base/main
 ```
 
-In the new project, you can describe the specific project; use README.md for that, and you can configure the testing setup specific to the project. As a minimum, you need to add `.gsa/test.yml`. It is currently empty, but it must be populated for the testing workflow to function. An example could be this:
+In the new project, you can describe the specific project; use README.md for that, and you can configure the testing setup specific to the project. As a minimum, you need to add `.gsa/test-test.yml`. It is currently empty, but it must be populated for the testing workflow to function. An example could be this:
 
 ```yaml
 tools:
