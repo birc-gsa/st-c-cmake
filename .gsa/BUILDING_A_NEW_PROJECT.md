@@ -10,7 +10,12 @@ In the new project repo, we need to setup a remote pointer to this base repo.
 > git merge base/main --allow-unrelated-histories
 ```
 
-Now you have a connection to the base-repo so you can fetch and merge updates in the future.
+Now you have a connection to the base-repo so you can fetch and merge updates in the future. Any time you need to pull down changes from the base repo, repeat
+
+```sh
+> git fetch base
+> git merge base/main
+```
 
 In the new project, you can describe the specific project; use README.md for that, and you can configure the testing setup specific to the project. As a minimum, you need to add `.gsa/test.yml`. It is currently empty, but it must be populated for the testing workflow to function. An example could be this:
 
