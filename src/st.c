@@ -5,6 +5,7 @@ int main(int argc, char const *argv[])
     if (argc != 3)
     {
         fprintf(stderr, "%s genome reads", argv[0]);
+        return 1;
     }
     const char *genome_fname = argv[1];
     const char *reads_fname = argv[2];
